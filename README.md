@@ -78,7 +78,7 @@ Inconsisteny: Marital status column has some inconsistent data like absurd, alon
 
 # Analysis
 
-I have analyzed the dataset using SSMS(SQL Server Management Studio) and also performed visualization in [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Dashboard1).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through analysis.
+I have analyzed the dataset using SSMS(SQL Server Management Studio) and also performed visualization with [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Dashboard1).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through analysis.
 
 1. Are there any null values or outliers? How will you handle them?
 
