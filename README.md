@@ -104,4 +104,7 @@ I have analyzed the dataset using SSMS(SQL Server Management Studio). The datase
 
    Porducts that were purchased on deal performed low.
 
+# Tableau Dashboard
+
+![image](https://user-images.githubusercontent.com/54399391/210470598-ca6dd6a5-2c60-472d-9916-3a82631cf34f.png)
 
