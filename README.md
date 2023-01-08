@@ -94,7 +94,7 @@ I have analyzed the dataset using SSMS(SQL Server Management Studio) and also pe
 
 4. What does the average customer look like?
 
-   This question can be answered by finding the  average age of the customer 54.0983459991059, that is 54. 
+   This question can be answered by finding the  average age of the customer 54.09, that is 54. 
 
 5. Which products are performing best?
 
