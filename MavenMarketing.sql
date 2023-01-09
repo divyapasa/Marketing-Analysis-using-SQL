@@ -1,14 +1,10 @@
+--- To view the tables
 SELECT * FROM customer
 SELECT * FROM purchase
-
-
-
---What does the average customer look like?
 
 ---------------DATA CLEANING-----------------
 
 -- Finding outliers
-
 with orderedList AS (
 SELECT
 	ID,
@@ -90,7 +86,6 @@ WHERE Year_Birth >=
 		FROM iqr))
 
 -- Deleting the outliers 
-
 DELETE FROM customer
 WHERE ID = 1150 
 DELETE FROM customer
@@ -99,19 +94,16 @@ DELETE FROM customer
 WHERE ID = 11004
 
 -- To find null values-- There are 24 null values
-
 SELECT income
 FROM customer
 WHERE income IS NULL
 
 -- Replace null values with the average income (52247.2513537906)
-
 SELECT AVG(income) FROM customer
 
 update customer set income= 52247.2513537906 where income is null
 
 -- Updating the Marital_Status = 'YOLO' with unknown 
-
 SELECT ID, Marital_Status
 FROM customer 
 WHERE Marital_Status = 'YOLO'
@@ -143,6 +135,7 @@ select distinct Marital_Status
 FROM customer
 
 ------------ END OF DATA CLEANING ------------
+
 --Total number of customers?
 SELECT DISTINCT COUNT(ID) AS Total_Customers FROM customer
 
