@@ -69,17 +69,19 @@ Country - Customer's location
 
 # Data Cleaning
 
-There are some data quality issues that are identified in the dataset like missing data, Outliers, inconsistent data and uplicate data using SQL queries.
+There are some data quality issues that are identified in the dataset like missing data, Outliers, inconsistent data and duplicate data.
 
-Null values: There are 24 null values in the income column of the customer table which were replaced with the average values based on income of other values.
+Null values: There are 24 null values in the income column of the customer table which were replaced with the average value based on income.
 
 Outliers: The Year_Birth column has 3 outliers which were deleted as having outliers can mess up the analysis by bringing the averages up or down and in general distorting the statistics.
 
-Inconsisteny: Marital status column has some inconsistent data like absurd, alone and YOLO. Absurd and YOLO values were changed to unknown and alone was changed to
+Inconsisteny: Marital status column has some inconsistent data like absurd, alone and YOLO. Absurd and YOLO values were changed to unknown and alone was changed to single.
+
+Data cleaning was performed using simple to complex SQL queries.
 
 # Analysis
 
-I have analyzed the dataset using SSMS(SQL Server Management Studio) and also performed visualization with [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Dashboard1).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through analysis.
+I have analyzed the dataset with SSMS(SQL Server Management Studio) and also performed visualization with [To view my Tableau Dashboard click here](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Maven Marketing).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through SQL analysis.
 
 1. Are there any null values or outliers? How will you handle them?
 
@@ -107,6 +109,6 @@ I have analyzed the dataset using SSMS(SQL Server Management Studio) and also pe
 
 # Tableau Dashboard
 
-[To view my Tableau Dashboard click here](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Dashboard1)
+[To view my Tableau Dashboard click here](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Maven Marketing)
 
 ![image](https://user-images.githubusercontent.com/54399391/211232887-4ac895b5-f2fa-4c0b-a712-fb6a994f7d77.png)
