@@ -81,7 +81,7 @@ Data cleaning was performed using simple to complex SQL queries.
 
 # Analysis
 
-I have analyzed the dataset with SSMS(SQL Server Management Studio) and also performed visualization with [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Maven Marketing).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through SQL analysis.
+I have analyzed the dataset with SSMS(SQL Server Management Studio) and also performed visualization with [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/MavenMarketing).The dataset was divided into 2 tables: customer and purchase. The below questions were answered through SQL analysis.
 
 1. Are there any null values or outliers? How will you handle them?
 
@@ -109,6 +109,6 @@ I have analyzed the dataset with SSMS(SQL Server Management Studio) and also per
 
 # Tableau Dashboard
 
-[Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Maven Marketing)
+[Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/MavenMarketing)
 
 ![image](https://user-images.githubusercontent.com/54399391/211232887-4ac895b5-f2fa-4c0b-a712-fb6a994f7d77.png)
