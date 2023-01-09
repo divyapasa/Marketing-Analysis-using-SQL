@@ -3,7 +3,8 @@
 # Dataset
 **Maven Analytics: marketing Campaign Results Dataset**
 
-**Dataset**
+**About the Dataset**
+
 This Dataset has been taken from the Maven Analytics website. It has marketing campaign data of 2240 customers of Maven Marketing,  including customer profiles, product preferences, campaign successes/failures, and channel performance. 
 
 **Features** 
@@ -108,5 +109,4 @@ I have analyzed the dataset using SSMS(SQL Server Management Studio) and also pe
 
 [To view my Tableau Dashboard click here](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/Dashboard1)
 
-![image](https://user-images.githubusercontent.com/54399391/210470598-ca6dd6a5-2c60-472d-9916-3a82631cf34f.png)
-
+![image](https://user-images.githubusercontent.com/54399391/211232887-4ac895b5-f2fa-4c0b-a712-fb6a994f7d77.png)
