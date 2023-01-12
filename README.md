@@ -111,4 +111,5 @@ I have analyzed the dataset with SSMS(SQL Server Management Studio) and also per
 
 [Tableau](https://public.tableau.com/app/profile/divya1779/viz/MavenMarketingAnalysis/MavenMarketing)
 
-[image](https://user-images.githubusercontent.com/54399391/211943791-996e7c00-682c-4b51-a59b-6bad00389c80.png)
+![image](https://user-images.githubusercontent.com/54399391/211943988-165eb845-fbb8-48bd-ac31-efde762a8c06.png)
+
