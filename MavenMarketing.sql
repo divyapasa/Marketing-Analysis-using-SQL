@@ -204,20 +204,6 @@ FROM Sales
 GROUP BY Country
 ORDER BY Total_Sales DESC
 
---
-SELECT COUNT(p.ID) AS Purchase_Count , year(p.Dt_Customer) AS Years, s.Total_Sales 
-FROM purchase p
-JOIN Sales s
-JOIN customer c
-ON c.ID = s.ID
-
-GROUP BY year(Dt_Customer)
-
-SELECT year(p.Dt_Customer) AS Years, SUM(Wine + Fruits + Meat + Fish + Sweet + Gold) AS Total_Sales
-FROM Sales s
-JOIN purchase p
-ON 
-
 
 ---------------THE END-----------------
 
