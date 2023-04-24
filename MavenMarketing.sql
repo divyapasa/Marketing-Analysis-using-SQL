@@ -1,10 +1,11 @@
---- To view the tables
 SELECT * FROM customer
 SELECT * FROM purchase
 
+
 ---------------DATA CLEANING-----------------
 
--- Finding outliers
+-- Finding outliers (using CTE)
+
 with orderedList AS (
 SELECT
 	ID,
@@ -85,7 +86,7 @@ WHERE Year_Birth >=
 	(SELECT MAX(outlier_range)
 		FROM iqr))
 
--- Deleting the outliers 
+-- Delete the outliers 
 DELETE FROM customer
 WHERE ID = 1150 
 DELETE FROM customer
@@ -93,13 +94,18 @@ WHERE ID = 7829
 DELETE FROM customer
 WHERE ID = 11004
 
--- To find null values-- There are 24 null values
+-- To find null values-- 
 SELECT income
 FROM customer
 WHERE income IS NULL
 
--- Replace null values with the average income (52247.2513537906)
+-- **There are 24 null values**
+
+
+-- Replace null values with the average income 
 SELECT AVG(income) FROM customer
+
+-- o/p: (52247.2513537906)
 
 update customer set income= 52247.2513537906 where income is null
 
@@ -124,7 +130,7 @@ select ID, Marital_Status
 FROM customer
 WHERE Marital_Status= 'unknown'
 
--- Updating Marital_Status= 'Alone' with 'Single' 
+-- Update Marital_Status= 'Alone' with 'Single' 
 SELECT ID, Marital_Status
 FROM customer 
 WHERE Marital_Status = 'Alone'
@@ -136,19 +142,23 @@ FROM customer
 
 ------------ END OF DATA CLEANING ------------
 
---Total number of customers?
+------------ DATA ANALYSIS ------------
+
+SELECT * FROM customer
+SELECT * FROM purchase
+
+-- 1.Total number of customers?
 SELECT DISTINCT COUNT(ID) AS Total_Customers FROM customer
 
---What factors are significantly related to the number of web purchases?
+-- 2.What factors are significantly related to the number of web purchases?
 SELECT SUM(NumDealsPurchases) AS PurchasedOnDeal, SUM(NumWebPurchases) AS PurchasedOnWeb, SUM(NumCatalogPurchases) AS PurchasedOnCatalog, SUM(NumStorePurchases) AS PurchasedOnStore  
 FROM purchase
 
---Which marketing campaign was the most successful?
+-- 3.Which marketing campaign was the most successful?
 SELECT  SUM(AcceptedCmp1) AS Campaign1, SUM(AcceptedCmp2) AS Campaign2, SUM(AcceptedCmp3) AS Campaign3, SUM(AcceptedCmp4) AS Campaign4, SUM(AcceptedCmp5) AS Campaign5
 FROM customer
 
-
--- Numbers of customers that belong to same year
+-- 4.Numbers of customers that belong to same year
 CREATE VIEW avg_customer AS
 SELECT COUNT(ID) AS TotalCust, Year_Birth
 FROM customer
@@ -168,24 +178,25 @@ SELECT * FROM CUST_AGE
 --Finding the average age from the view CUST_AGE
 SELECT avg(Age) AS AVG_AGE FROM CUST_AGE
 
---Which products are performing best?
+-- 5.Which products are performing best?
 SELECT SUM(MntWines) AS Wine, SUM(MntFruits) AS Fruits, SUM(MntMeatProducts) AS Meat, SUM(MntFishProducts) AS Fish, SUM(MntSweetProducts) AS Sweet, SUM(MntGoldProds) AS Gold
 FROM purchase
 
---Which channels are underperforming?
+--6.Which channels are underperforming?
 SELECT SUM(NumDealsPurchases) AS PurchasedOnDeal, SUM(NumWebPurchases) AS PurchasedOnWeb, SUM(NumCatalogPurchases) AS PurchasedOnCatalog, SUM(NumStorePurchases) AS PurchasedOnStore  
 FROM purchase
 
--- 
+-- Number of customers from each country
 SELECT Country, COUNT(ID) AS NumberOfCustomers
 FROM customer
 GROUP BY Country
 ORDER BY COUNT(ID) DESC
 
 --Recency tells about number of days since customer's last purchase
-SELECT ID,Recency 
+SELECT COUNT(ID) AS CustPurchaseRecent,Recency 
 FROM purchase
-WHERE Recency BETWEEN 0 and 30
+WHERE Recency BETWEEN 0 and 10
+GROUP BY Recency
 ORDER BY Recency 
 
 --Overall global sales of all products
@@ -205,6 +216,12 @@ GROUP BY Country
 ORDER BY Total_Sales DESC
 
 
----------------THE END-----------------
+--*******************END OF MY ANALYSIS*******************--
+
+
+
+
+
+
 
 
