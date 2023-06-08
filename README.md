@@ -35,6 +35,9 @@
 * Complain - 1 if customer complained in the last 2 years, 0 otherwise
 * Country - Customer's location
 
+# Tools used:
+SQL: 
+
 # Data Cleaning
 There are some data quality issues that are identified in the dataset like missing data, Outliers, inconsistent data and duplicate data.
 * Null values: There are 24 null values in the income column of the customer table which were replaced with the average value based on income.
@@ -59,3 +62,14 @@ I have analyzed the dataset with SSMS(SQL Server Management Studio). The dataset
 * Wine has yielded the highest profits of $680,816, making it the best performing product.
 6. Which channels are underperforming?
 * Deal purchases showed lower performance compared to other channels.
+
+# Recommendations
+Web Purchases: Since web purchases are more prevalent than deal and catalog purchases, it would be wise to focus marketing efforts on improving the online shopping experience, optimizing website functionality, and investing in digital marketing strategies to drive further growth in web purchases.
+
+Marketing Campaigns: Given that Campaign 4 was the most successful, it would be advisable to analyze the factors that contributed to its effectiveness. Identify the specific elements that made Campaign 4 successful and consider incorporating similar strategies, messaging, or channels into future marketing campaigns to maximize their impact.
+
+Customer Profile: Understanding that the average customer has an age of around 54, it would be beneficial to tailor marketing messages, product offerings, and customer experiences to cater to this demographic. Consider conducting further market research to gain insights into the preferences, needs, and behaviors of customers within this age group.
+
+Product Performance: As wine has shown the highest profits, it would be worthwhile to allocate additional resources and marketing efforts towards promoting and expanding the wine product line. Consider exploring partnerships with wineries, enhancing wine-related content, and implementing targeted marketing campaigns to further capitalize on its success.
+
+Underperforming Channels: Given that deal purchases demonstrated lower performance, it may be worthwhile to evaluate the effectiveness of the deal channel. Consider analyzing the reasons behind its underperformance, such as pricing strategies, product selection, or customer targeting, and explore potential improvements or alternative marketing channels that align better with the target audience's preferences and behaviors.
