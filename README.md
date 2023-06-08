@@ -1,6 +1,5 @@
 # Maven Marketing Analysis Dataset
 **About the Dataset** : This Dataset has been taken from the Maven Analytics website. It has marketing campaign data of 2240 customers of Maven Marketing,  including customer profiles, product preferences, campaign successes/failures, and channel performance. 
-
 **Features** 
 * Field - Description
 * ID - Customer's unique identifier
@@ -32,17 +31,17 @@
 * Complain - 1 if customer complained in the last 2 years, 0 otherwise
 * Country - Customer's location
 
-# Tools used: SSMS, SQL 
-# SQL skills: DDL, DML, DQL for database creation, data insertion, querying, aggregation functions, joins, grouping, sorting, data cleaning and transformation.
+# Tools used 
+SSMS, SQL 
+# SQL skills
+DDL, DML, DQL for database creation, data insertion, querying, aggregation functions, joins, grouping, sorting, data cleaning and transformation.
 
 # Data Cleaning
 There are some data quality issues that are identified in the dataset like missing data, Outliers, inconsistent data and duplicate data.
 * Null values: There are 24 null values in the income column of the customer table which were replaced with the average value based on income.
-
 * Outliers: The Year_Birth column has 3 outliers which were deleted as having outliers can mess up the analysis by bringing the averages up or down and in general distorting the statistics.
 * Inconsisteny: Marital status column has some inconsistent data like absurd, alone and YOLO. Absurd and YOLO values were changed to unknown and alone was changed to single.
-
-Data cleaning was performed using simple to complex SQL queries.
+* Data cleaning was performed using simple to complex SQL queries.
 
 # Analysis
 I have analyzed the dataset with SSMS(SQL Server Management Studio). The dataset was divided into 2 tables: customer and purchase. The below questions were answered through SQL analysis.
@@ -61,12 +60,12 @@ I have analyzed the dataset with SSMS(SQL Server Management Studio). The dataset
 * Deal purchases showed lower performance compared to other channels.
 
 # Recommendations
-Web Purchases: Since web purchases are more prevalent than deal and catalog purchases, it would be wise to focus marketing efforts on improving the online shopping experience, optimizing website functionality, and investing in digital marketing strategies to drive further growth in web purchases.
+* **Web Purchases**: Since web purchases are more prevalent than deal and catalog purchases, it would be wise to focus marketing efforts on improving the online shopping experience, optimizing website functionality, and investing in digital marketing strategies to drive further growth in web purchases.
 
-Marketing Campaigns: Given that Campaign 4 was the most successful, it would be advisable to analyze the factors that contributed to its effectiveness. Identify the specific elements that made Campaign 4 successful and consider incorporating similar strategies, messaging, or channels into future marketing campaigns to maximize their impact.
+* **Marketing Campaigns**: Given that Campaign 4 was the most successful, it would be advisable to analyze the factors that contributed to its effectiveness. Identify the specific elements that made Campaign 4 successful and consider incorporating similar strategies, messaging, or channels into future marketing campaigns to maximize their impact.
 
-Customer Profile: Understanding that the average customer has an age of around 54, it would be beneficial to tailor marketing messages, product offerings, and customer experiences to cater to this demographic. Consider conducting further market research to gain insights into the preferences, needs, and behaviors of customers within this age group.
+* **Customer Profile**: Understanding that the average customer has an age of around 54, it would be beneficial to tailor marketing messages, product offerings, and customer experiences to cater to this demographic. Consider conducting further market research to gain insights into the preferences, needs, and behaviors of customers within this age group.
 
-Product Performance: As wine has shown the highest profits, it would be worthwhile to allocate additional resources and marketing efforts towards promoting and expanding the wine product line. Consider exploring partnerships with wineries, enhancing wine-related content, and implementing targeted marketing campaigns to further capitalize on its success.
+* **Product Performance**: As wine has shown the highest profits, it would be worthwhile to allocate additional resources and marketing efforts towards promoting and expanding the wine product line. Consider exploring partnerships with wineries, enhancing wine-related content, and implementing targeted marketing campaigns to further capitalize on its success.
 
-Underperforming Channels: Given that deal purchases demonstrated lower performance, it may be worthwhile to evaluate the effectiveness of the deal channel. Consider analyzing the reasons behind its underperformance, such as pricing strategies, product selection, or customer targeting, and explore potential improvements or alternative marketing channels that align better with the target audience's preferences and behaviors.
+* **Underperforming Channels**: Given that deal purchases demonstrated lower performance, it may be worthwhile to evaluate the effectiveness of the deal channel. Consider analyzing the reasons behind its underperformance, such as pricing strategies, product selection, or customer targeting, and explore potential improvements or alternative marketing channels that align better with the target audience's preferences and behaviors.
