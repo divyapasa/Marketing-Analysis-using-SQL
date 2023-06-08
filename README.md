@@ -2,9 +2,7 @@
 
 # Dataset
 **Maven Analytics: marketing Campaign Results Dataset**
-
-**About the Dataset**
-This Dataset has been taken from the Maven Analytics website. It has marketing campaign data of 2240 customers of Maven Marketing,  including customer profiles, product preferences, campaign successes/failures, and channel performance. 
+**About the Dataset** : This Dataset has been taken from the Maven Analytics website. It has marketing campaign data of 2240 customers of Maven Marketing,  including customer profiles, product preferences, campaign successes/failures, and channel performance. 
 
 **Features** 
 * Field - Description
@@ -61,4 +59,3 @@ I have analyzed the dataset with SSMS(SQL Server Management Studio). The dataset
 * Wine has yielded the highest profits of $680,816, making it the best performing product.
 6. Which channels are underperforming?
 * Deal purchases showed lower performance compared to other channels.
-
