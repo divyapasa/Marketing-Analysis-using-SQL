@@ -32,8 +32,8 @@
 * Complain - 1 if customer complained in the last 2 years, 0 otherwise
 * Country - Customer's location
 
-# Tools used:
-SQL: 
+# Tools used: SSMS, SQL 
+# SQL skills: DDL, DML, DQL for database creation, data insertion, querying, aggregation functions, joins, grouping, sorting, data cleaning and transformation.
 
 # Data Cleaning
 There are some data quality issues that are identified in the dataset like missing data, Outliers, inconsistent data and duplicate data.
